@@ -49,7 +49,6 @@ routerProgramacion.use(express.json())
 //todas las solicitudes de tipo POST a /api/cursos/programacion
 routerProgramacion.post('/', (req, res) => {
   let cursoNuevo = req.body;
-  console.log(req.body)
   programacion.push(cursoNuevo);
   res.send(JSON.stringify(programacion))
 
